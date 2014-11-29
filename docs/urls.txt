@@ -1,1 +1,5 @@
 http://en.wikipedia.org/wiki/Predictive_analytics
+http://www.mahmoudyoussef.com/BI/9.doc
+http://stackoverflow.com/questions/26547162/how-to-architect-a-prediction-system-using-scala-spring-mvc-akka-mysql-maven
+http://www.predictiveanalyticstoday.com/big-data-analytics-and-predictive-analytics/
+http://www.predictiveanalyticstoday.com/bigdata-platforms-bigdata-analytics-software/
