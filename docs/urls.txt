@@ -3,6 +3,12 @@ http://www.mahmoudyoussef.com/BI/9.doc
 http://stackoverflow.com/questions/26547162/how-to-architect-a-prediction-system-using-scala-spring-mvc-akka-mysql-maven
 http://www.predictiveanalyticstoday.com/big-data-analytics-and-predictive-analytics/
 http://www.predictiveanalyticstoday.com/bigdata-platforms-bigdata-analytics-software/
+http://www.predictiveanalyticstoday.com/predictive-modeling/
 http://java.dzone.com/articles/spring-boot-and-scala
 http://www.slideshare.net/chris.e.richardson/building-microservices-with-scala-functional-domain-models-and-spring-boot
 http://chariotsolutions.com/blog/post/converting-java-spring-to-scala/
+https://cloud.google.com/prediction/
+http://www.statsoft.com/textbook/data-mining-techniques
+http://www.ibm.com/developerworks/library/ba-predictive-analytics2/
+http://www.blue-yonder.com/downloads/pac_studie_exsum_en.pdf
+http://www.ftpress.com/articles/article.aspx?p=2133374
