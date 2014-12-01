@@ -1,0 +1,69 @@
+buildscript {
+    repositories {
+        maven { url 'http://repo.spring.io/libs-snapshot' }
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:1.2.0.RC2')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'maven'
+
+sourceSets {
+main {
+		java {
+			srcDir 'src/main/java'
+		}
+		scala {
+			srcDir 'src/main/scala'
+		}
+	}
+}
+
+repositories {
+    maven { url 'http://repo.spring.io/milestone' }
+    maven { url 'http://repo.spring.io/snapshot' }
+    maven { url 'https://repository.jboss.org/nexus/content/repositories/releases' }
+    maven { url 'https://oss.sonatype.org/content/repositories/releases' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'http://repo.maven.apache.org/maven2' }
+}
+
+dependencies{
+    compile 'org.slf4j:slf4j-api:1.7.5'
+    compile "org.scala-lang:scala-library:2.11.2"
+	compile "org.springframework:spring-webmvc:4.0.0.RELEASE"
+	compile 'org.eclipse.jetty:jetty-webapp:9.3.0.M1'
+	compile "org.eclipse.jetty:jetty-jsp:9.3.0.M1"
+	compile group: 'javax.inject', name: 'javax.inject', version: javax_inject_version
+   compile group: 'org.springframework.boot', name: 'spring-boot-actuator', version: spring_boot_version
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: spring_boot_version
+    compile group: 'org.springframework.boot', name: 'spring-boot-loader-tools', version: spring_boot_version
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-logging', version: spring_boot_version
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: spring_boot_version
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: spring_boot_version
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: spring_boot_version
+    compile(group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: spring_boot_version) {
+        exclude module: 'spring-boot-starter-tomcat'
+    }
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: spring_boot_version
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-cloudfoundry-connector', version: spring_cloud_version
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-spring-service-connector', version: spring_cloud_version
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-localconfig-connector', version: spring_cloud_version
+    compile(group: 'org.springframework', name: 'spring-context-support') {
+        exclude(module: 'quartz')
+    }
+    testCompile "junit:junit:4.11"
+}
+
+/*
+task run(type: JavaExec, dependsOn: classes) {
+    main = 'Main'
+    classpath sourceSets.main.runtimeClasspath
+    classpath configurations.runtime
+}
+*/
