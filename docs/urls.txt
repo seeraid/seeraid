@@ -12,3 +12,5 @@ http://www.statsoft.com/textbook/data-mining-techniques
 http://www.ibm.com/developerworks/library/ba-predictive-analytics2/
 http://www.blue-yonder.com/downloads/pac_studie_exsum_en.pdf
 http://www.ftpress.com/articles/article.aspx?p=2133374
+http://help.sap.com/saphelp_scm70/helpdata/en/ac/216b6e337b11d398290000e8a49608/frameset.htm
+http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html
