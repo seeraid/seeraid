@@ -20,3 +20,12 @@ http://rapid.tips/custom/predictoR/brew/index.rhtml
 http://www.stevengould.org/software/openforecast/index.shtml
 https://docs.oracle.com/cd/E26228_01/doc.93/e20706/ap_forcst_calc_ex.htm#WEAFC343
 http://help.sap.com/saphelp_46c/helpdata/en/a5/6320e843a211d189410000e829fbbd/content.htm
+http://www.prediction.io/
+https://github.com/PredictionIO/PredictionIO
+
+http://javaluator.sourceforge.net/en/home/
+http://www.objecthunter.net/exp4j/
+https://code.google.com/p/symja/wiki/MathExpressionParser
+https://github.com/scireum/parsii
+http://www.formula4j.com/
+http://www.cse.msu.edu/SENS/Software/jep-2.23/doc/website/doc/doc_usage.htm
