@@ -15,3 +15,8 @@ http://www.ftpress.com/articles/article.aspx?p=2133374
 http://help.sap.com/saphelp_scm70/helpdata/en/ac/216b6e337b11d398290000e8a49608/frameset.htm
 http://opentsdb.net/docs/build/html/user_guide/query/aggregators.html
 http://docs.spring.io/spring-boot/docs/current/reference/pdf/spring-boot-reference.pdf
+https://code.google.com/p/strategico/
+http://rapid.tips/custom/predictoR/brew/index.rhtml
+http://www.stevengould.org/software/openforecast/index.shtml
+https://docs.oracle.com/cd/E26228_01/doc.93/e20706/ap_forcst_calc_ex.htm#WEAFC343
+http://help.sap.com/saphelp_46c/helpdata/en/a5/6320e843a211d189410000e829fbbd/content.htm
