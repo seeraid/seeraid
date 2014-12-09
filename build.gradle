@@ -1,18 +1,80 @@
-apply plugin: 'scala'
+buildscript {
+    repositories {
+        maven { url 'http://repo.maven.apache.org/maven2' }
+	    maven { url "http://repo.spring.io/snapshot" }
+	    maven { url "http://repo.spring.io/milestone" }
+	    maven { url "http://repo.spring.io/release" }
+	    mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.0.RC2")
+    }
+}
 
-repositories{
+apply plugin: 'scala'
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.7
+
+repositories {
     mavenCentral()
     mavenLocal()
+    maven { url 'http://repo.maven.apache.org/maven2' }
+    maven { url 'http://repo.spring.io/milestone' }
+    maven { url 'http://repo.spring.io/snapshot' }
+    maven { url 'https://repository.jboss.org/nexus/content/repositories/releases' }
+    maven { url 'https://oss.sonatype.org/content/repositories/releases' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 dependencies{
     compile 'org.slf4j:slf4j-api:1.7.5'
+    compile 'jfree:jfreechart:1.0.13'
+    compile 'com.mysema.scalagen:scalagen-maven-plugin:0.2.2'
     compile "org.scala-lang:scala-library:2.11.2"
-    testCompile "junit:junit:4.11"
+    testCompile "junit:junit:4.8.1"
+    compile("org.springframework.boot:spring-boot-starter-web")
+//    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.thymeleaf:thymeleaf-spring4")
+    compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
+//    compile("org.hibernate:hibernate-validator")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile 'org.scalatest:scalatest_2.11:2.2.1'
+//    compile("org.hsqldb:hsqldb")
+    compile ("org.scala-lang:scala-library:2.11.2")
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+//    compile("org.webjars:bootstrap:3.1.1")
+    testCompile("junit:junit")
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.2.1'
+}
+
+/*
 task run(type: JavaExec, dependsOn: classes) {
     main = 'Main'
     classpath sourceSets.main.runtimeClasspath
     classpath configurations.runtime
 }
+
+task writeNewPom << {
+    pom {
+        project {
+            inceptionYear '2008'
+            licenses {
+                license {
+                    name 'The Apache Software License, Version 2.0'
+                    url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    distribution 'repo'
+                }
+            }
+        }
+    }.writeTo("$buildDir/newpom.xml")
+}
+*/
