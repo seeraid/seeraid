@@ -29,3 +29,16 @@ https://code.google.com/p/symja/wiki/MathExpressionParser
 https://github.com/scireum/parsii
 http://www.formula4j.com/
 http://www.cse.msu.edu/SENS/Software/jep-2.23/doc/website/doc/doc_usage.htm
+
+
+ETL/BI/OLAP
+************
+http://www.talend.com/resource/etl-tool.html
+http://butleranalytics.com/5-free-open-source-etl-tools/
+http://www.predictiveanalyticstoday.com/top-free-extract-transform-load-etl-software/
+http://community.pentaho.com/
+http://www.predictiveanalyticstoday.com/open-source-free-business-intelligence-solutions/
+http://www.predictiveanalyticstoday.com/top-graph-databases/
+http://www.predictiveanalyticstoday.com/top-5-predictive-analytics-freeware-software/
+http://www.predictiveanalyticstoday.com/top-15-free-data-mining-software/
+
