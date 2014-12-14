@@ -42,3 +42,11 @@ http://www.predictiveanalyticstoday.com/top-graph-databases/
 http://www.predictiveanalyticstoday.com/top-5-predictive-analytics-freeware-software/
 http://www.predictiveanalyticstoday.com/top-15-free-data-mining-software/
 
+
+
+Good to read
+*************
+http://java.dzone.com/articles/running-hadoop-mapreduce
+http://service-architecture.blogspot.in/2014/01/six-reasons-your-big-data-hadoop.html
+http://spring.io/guides/gs/yarn-basic-single/
+https://spring.io/guides/gs/yarn-basic/

@@ -17,6 +17,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'war'
 apply plugin: 'spring-boot'
+apply plugin: 'base'
 
 sourceCompatibility = 1.7
 
@@ -36,33 +37,49 @@ dependencies{
     compile 'jfree:jfreechart:1.0.13'
     compile 'com.mysema.scalagen:scalagen-maven-plugin:0.2.2'
     compile "org.scala-lang:scala-library:2.11.2"
-    testCompile "junit:junit:4.8.1"
     compile("org.springframework.boot:spring-boot-starter-web")
-//    compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-actuator")
     compile("org.thymeleaf:thymeleaf-spring4")
     compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
-//    compile("org.hibernate:hibernate-validator")
+    compile ("org.scala-lang:scala-library:2.11.2")
+    compile("org.springframework.data:spring-yarn-boot:2.0.0.RELEASE")
+
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile 'org.scalatest:scalatest_2.11:2.2.1'
-//    compile("org.hsqldb:hsqldb")
-    compile ("org.scala-lang:scala-library:2.11.2")
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-//    compile("org.webjars:bootstrap:3.1.1")
+    testCompile "junit:junit:4.8.1"
+    testCompile("org.springframework.data:spring-yarn-boot-test:2.0.0.RELEASE")
+    testCompile("org.hamcrest:hamcrest-core:1.2.1")
+    testCompile("org.hamcrest:hamcrest-library:1.2.1")
     testCompile("junit:junit")
+
+//    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+//    compile("org.hibernate:hibernate-validator")
+//    compile("org.hsqldb:hsqldb")
+//    compile("org.webjars:bootstrap:3.1.1")
+}
+
+task copyJars(type: Copy) {
+    from "$buildDir/libs"
+    into "$rootDir/target/"
+    include "**/*.jar"
 }
 
 task wrapper(type: Wrapper) {
     gradleVersion = '2.2.1'
 }
 
-/*
-task run(type: JavaExec, dependsOn: classes) {
+assemble.doLast {copyJars.execute()}
+clean.doLast {ant.delete(dir: "target")}
+
+tasks.create(name: 'myrun', type: JavaExec, dependsOn: classes) {
     main = 'Main'
     classpath sourceSets.main.runtimeClasspath
     classpath configurations.runtime
 }
-
+myrun
+/*
 task writeNewPom << {
     pom {
         project {
