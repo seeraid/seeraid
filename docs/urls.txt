@@ -31,6 +31,13 @@ http://www.formula4j.com/
 http://www.cse.msu.edu/SENS/Software/jep-2.23/doc/website/doc/doc_usage.htm
 
 
+Forecasting
+************
+https://github.com/log0ymxm/weka-timeseriesforecasting
+https://www.otexts.org/fpp/9/4
+https://github.com/wvrossem/forecasting-framework
+https://code.google.com/p/smartgrid-forecast/source/browse/#svn%2Ftrunk%2Fsmartgrid-forecast%2Fthesis%2Fsrc
+
 ETL/BI/OLAP
 ************
 http://www.talend.com/resource/etl-tool.html
@@ -50,3 +57,11 @@ http://java.dzone.com/articles/running-hadoop-mapreduce
 http://service-architecture.blogspot.in/2014/01/six-reasons-your-big-data-hadoop.html
 http://spring.io/guides/gs/yarn-basic-single/
 https://spring.io/guides/gs/yarn-basic/
+
+Analytics & Hierarchies
+************************
+https://docs.oracle.com/cd/B40099_02/books/LSSIA/LSSIAAnalyticsConfigInfo4.html
+https://help.sap.com/saphelp_crm700_ehp01/helpdata/en/46/5754c601a208e7e10000000a114a6b/content.htm
+http://www.learndatamodeling.com/star.php
+http://en.wikipedia.org/wiki/Bill_of_materials
+
